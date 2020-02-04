@@ -1,0 +1,16 @@
+dist: xenial
+
+language: node_js
+
+install:
+  - npm install
+
+script:
+  - npm run lint
+
+notifications:
+  email: false
+
+branches:
+  only:
+  - master
